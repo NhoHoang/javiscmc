@@ -1,6 +1,5 @@
 package com.example.userservice.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +24,6 @@ public class UserDTO {
 
     @NotNull
     @Min(value = 15000,message = "Basic salary is below require")
-    @JsonProperty("based_salary")
+//    @JsonProperty("based_salary")
     private Double salary;
 }
